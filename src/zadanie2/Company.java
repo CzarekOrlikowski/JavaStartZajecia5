@@ -4,22 +4,31 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Company {
-    public Employee[] list;
+    private Employee[] list;
 
-   public Company() {
+    public Company() {
 
-   }
+    }
 
-   Scanner scan = new Scanner(System.in);
+    public Employee[] getList() {
+        return list;
+    }
 
-   public Employee[] add (){
-       Employee[] table = new Employee[2];
-       table[0] = employeeCreator();
-       table[1] = employeeCreator();
-       return table;
-   }
+    public void setList(Employee[] list) {
+        this.list = list;
+
+    }
+
+
+    public Employee[] add() {
+        Employee[] table = new Employee[2];
+        table[0] = employeeCreator();
+        table[1] = employeeCreator();
+        return table;
+    }
 
     public Employee employeeCreator() {
+        Scanner scan = new Scanner(System.in);
         Employee employee = new Employee();
         System.out.print("Podaj imię pracownika: ");
         String firstName = scan.nextLine();
@@ -36,7 +45,7 @@ public class Company {
         return employee;
     }
 
-     public String toString() {
+    public String toString() {
         return "Company{" +
                 "list=" + Arrays.toString(list) +
                 '}';

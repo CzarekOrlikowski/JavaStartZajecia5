@@ -6,9 +6,10 @@ public class EmployeeManager {
         System.out.println("Dodawanie nowych pracowników");
         System.out.println();
         Company newCompany = new Company();
-        newCompany.list = newCompany.add();
+        Employee[] table = new Employee[2];
+        table = newCompany.add();
 
-        double totalSalary = newCompany.list[0].getSalary() + newCompany.list[1].getSalary();
+        double totalSalary = newCompany.getList[0].getSalary() + newCompany.list[1].getSalary();
         System.out.println("Suma wynagrodzeń to: " + totalSalary);
         System.out.println();
         System.out.println(newCompany);
