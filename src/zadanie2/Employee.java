@@ -1,4 +1,4 @@
-package zadanie1;
+package zadanie2;
 
 public class Employee {
     private String firstName;
@@ -33,4 +33,11 @@ public class Employee {
     }
 
 
+    public String toString() {
+        return "Employee{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
