@@ -5,12 +5,10 @@ public class EmployeeManager {
 
         System.out.println("Dodawanie nowych pracowników");
         System.out.println();
-        Company newCompany = new Company();
-        Employee[] table = new Employee[2];
-        table = newCompany.add();
-        newCompany.setList(table);
-        double totalSalary = newCompany.getList()[0].getSalary() + newCompany.getList()[1].getSalary();
-        System.out.println("Suma wynagrodzeń to: " + totalSalary);
+        Company newCompany = new Company(3);
+        newCompany.addEmployees();
+//        double totalSalary = newCompany.getEmployees()[0].getSalary() + newCompany.getEmployees()[1].getSalary();
+//        System.out.println("Suma wynagrodzeń to: " + totalSalary);
         System.out.println();
         System.out.println(newCompany);
 

@@ -4,27 +4,30 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Company {
-    private Employee[] list;
+    private Employee[] employees;
+    private int numberOfEmployees;
 
-    public Company() {
-
-    }
-
-    public Employee[] getList() {
-        return list;
-    }
-
-    public void setList(Employee[] list) {
-        this.list = list;
+    public Company(int NumberOfEmployees) {
+        this.employees = new Employee[numberOfEmployees];
+        this.numberOfEmployees = numberOfEmployees;
 
     }
 
+    public Employee[] getEmployees() {
+        return employees;
+    }
 
-    public Employee[] add() {
-        Employee[] table = new Employee[2];
-        table[0] = employeeCreator();
-        table[1] = employeeCreator();
-        return table;
+    public void setEmployees(Employee[] employees) {
+        this.employees = employees;
+
+    }
+
+    public Employee[] addEmployees() {
+        Employee[] employees = new Employee[numberOfEmployees];
+        for (int i=0; i<=numberOfEmployees-1; i++){
+        this.employees[i] = employeeCreator();
+        }
+        return employees;
     }
 
     public Employee employeeCreator() {
@@ -47,7 +50,7 @@ public class Company {
 
     public String toString() {
         return "Company{" +
-                "list=" + Arrays.toString(list) +
+                "list=" + Arrays.toString(employees) +
                 '}';
     }
 }

@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class EmployeeCreator {
 
-    Scanner scan = new Scanner(System.in);
-
-    public Employee employeeCreator() {
+      public Employee creatEmployee() {
+        Scanner scan = new Scanner(System.in);
         Employee employee = new Employee();
         System.out.print("Podaj imię pracownika: ");
         String firstName = scan.nextLine();
