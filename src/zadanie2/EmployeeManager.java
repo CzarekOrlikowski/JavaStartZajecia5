@@ -8,8 +8,8 @@ public class EmployeeManager {
         Company newCompany = new Company();
         Employee[] table = new Employee[2];
         table = newCompany.add();
-
-        double totalSalary = newCompany.getList[0].getSalary() + newCompany.list[1].getSalary();
+        newCompany.setList(table);
+        double totalSalary = newCompany.getList()[0].getSalary() + newCompany.getList()[1].getSalary();
         System.out.println("Suma wynagrodzeń to: " + totalSalary);
         System.out.println();
         System.out.println(newCompany);
