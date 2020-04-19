@@ -7,7 +7,7 @@ public class Company {
     private Employee[] employees;
     private int numberOfEmployees;
 
-    public Company(int NumberOfEmployees) {
+    public Company(int numberOfEmployees) {
         this.employees = new Employee[numberOfEmployees];
         this.numberOfEmployees = numberOfEmployees;
 
