@@ -26,7 +26,7 @@ public class Company {
 
     public void addEmployees(int numberOfEmployees) {
         if (numberOfEmployees > this.numberOfEmployees) {
-            System.out.println("Nie można wprowadzić nowego pracownika");
+            System.out.println("Nie można wprowadzić nowych pracowników");
         } else {
             Employee[] employees = new Employee[numberOfEmployees];
             for (int i = 0; i <= numberOfEmployees - 1; i++) {
