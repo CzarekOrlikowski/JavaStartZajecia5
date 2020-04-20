@@ -4,7 +4,7 @@ public class Product {
     String name;
     String opis;
     double priceNetto;
-    int category;
+    String category;
 
     public String getName() {
         return name;
@@ -30,11 +30,11 @@ public class Product {
         this.priceNetto = priceNetto;
     }
 
-    public int getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(int category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 
